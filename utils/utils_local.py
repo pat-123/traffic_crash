@@ -22,7 +22,10 @@ def join(data,rowi):
     val = ''
     for col in data.columns:
         if data.loc[:,col].dtype ==object:
-            val += '\'%s\','%data.loc[rowi,col] 
+            if col == 'crash_timestamp':
+                val += '\'%s\','%str(data.loc[rowi,col])
+            else:
+                val += '\'%s\','%data.loc[rowi,col] 
         else:
             val += '%s,'%data.loc[rowi,col] 
     return val[:-1]    
