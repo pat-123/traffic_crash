@@ -1,4 +1,4 @@
-This project is about reading a geojson format and extracting information to pandas dataframe. After the initial cleaning of data, the data is written to a postgresql database and query optimization will be done for queries on column geo_Coord_lat , geo_coord_lon and crash_timestamp
+﻿This project is about reading a geojson format and extracting information to pandas dataframe. After the initial cleaning of data, the data is written to a postgresql database and query optimization will be done for queries on column geo_Coord_lat , geo_coord_lon and crash_timestamp
 
 # Few points worth mentioning regarding directory structure:
 - json is placed under data/raw/
@@ -6,10 +6,11 @@ This project is about reading a geojson format and extracting information to pan
 - Notebook is present in notebooks folder
 - traffic_crash is a package which load all initial packages(__init__.py) and sets data file paths under config.py
   - Abstracts the messy paths in the main notebook to here, so that cleaner view can be provided
+- utils package is a general purpose utility package which contains API's for various purposes
 - scripts folder is a placeholder for future purposes
 ## How to run this?
-  ++ start Anaconda prompt and go to this folder's parent location and type jupyter notebook
-  ++ notebook starts with the parent folder as the base location and you can navigate to different projects from there
+  -  start Anaconda prompt and go to this folder's parent location and type jupyter notebook
+  - notebook starts with the parent folder as the base location and you can navigate to different projects from there
 
 
 
