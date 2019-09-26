@@ -5,7 +5,7 @@ This project is about reading a geojson format and extracting information to pan
 - Processed data is placed under data/processed after computation
 - Notebook is present in notebooks folder
 - traffic_crash is a package which load all initial packages(__init__.py) and sets data file paths under config.py
-  ++ Abstracts the messy paths in the main notebook to here, so that cleaner view can be provided
+  - Abstracts the messy paths in the main notebook to here, so that cleaner view can be provided
 - scripts folder is a placeholder for future purposes
 ## How to run this?
   ++ start Anaconda prompt and go to this folder's parent location and type jupyter notebook
@@ -22,4 +22,4 @@ Exploratory data analysis
 	- crash month, crash time are redundant, once we have all the data consolidated in timestamp object
 	- Longitude and latitude can be stored as float data type, as we need to calculate distance using those
 	- drv_age can be stored as int (for easier mathematical calculations) and later we can make it categorical if needed to analyze something
-- I will be storing these longitude and latitude in geography data type(postgis) in psql database(for calculation ease)¶
+- I will be storing these longitude and latitude in geography data type(postgis) in psql database(for calculation ease)Â¶
